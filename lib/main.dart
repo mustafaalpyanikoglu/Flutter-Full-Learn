@@ -4,9 +4,14 @@ import 'package:flutter_full_learn/101/app_bar_learn.dart';
 import 'package:flutter_full_learn/101/button_learn.dart';
 import 'package:flutter_full_learn/101/container_sized_box_learn.dart';
 import 'package:flutter_full_learn/101/icon_learn.dart';
+import 'package:flutter_full_learn/101/image_learn.dart';
 import 'package:flutter_full_learn/101/scaffold_learn.dart';
 
+import '101/cart_learn.dart';
 import '101/color_learn.dart';
+import '101/padding_learn.dart';
+import '101/stateless_learn.dart';
+import 'demos/note_demos_view.dart';
 
 void main() {
   runApp(const MyApp()); //projeyi başlatyıor
@@ -22,6 +27,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
+          cardTheme: CardTheme(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20))),
           errorColor: ColorsItems.porchase,
           appBarTheme: const AppBarTheme(
             centerTitle: true,
@@ -29,7 +37,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0,
           )),
-      home: const ColorLearnView(),
+      home: const NoteDemos(),
     );
   }
 }

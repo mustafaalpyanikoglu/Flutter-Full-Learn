@@ -55,7 +55,7 @@ class ButtonLearn extends StatelessWidget {
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                   primary: Colors.black,
-                  shape: RoundedRectangleBorder(
+                  shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(20)))),
               onPressed: () {},
               child: Padding(
@@ -63,7 +63,7 @@ class ButtonLearn extends StatelessWidget {
                     top: 20, bottom: 20, right: 40, left: 40),
                 child: Text(
                   'Place Bid',
-                  style: Theme.of(context).textTheme.headline5,
+                  style: Theme.of(context).textTheme.headlineSmall,
                 ),
               ),
             ),
