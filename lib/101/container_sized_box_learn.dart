@@ -10,7 +10,7 @@ class ContainerSizedBoxLearn extends StatelessWidget {
       body: Column(
         children: [
           SizedBox(width: 200, height: 200, child: Text('a' * 500)),
-          const SizedBox.shrink(), //boş bir alan vermek için
+          const SizedBox.shrink(), //boş bir alan vermek icin
           SizedBox.square(dimension: 50, child: Text('b' * 50)),
           Container(
             height: 50,

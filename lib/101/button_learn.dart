@@ -11,8 +11,8 @@ class ButtonLearn extends StatelessWidget {
           children: [
             TextButton(
                 onPressed: () {},
-                child:
-                    Text('Save', style: Theme.of(context).textTheme.subtitle1),
+                child: Text('Save',
+                    style: Theme.of(context).textTheme.titleMedium),
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.resolveWith((states) {
                     if (states.contains(MaterialState.pressed)) {

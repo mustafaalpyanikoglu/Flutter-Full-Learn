@@ -22,7 +22,7 @@ class ColorLearnView extends StatelessWidget {
 }
 
 class ColorsItems {
-  static final Color porchase = const Color(0xffEDBF61);
+  static const Color porchase = Color(0xffEDBF61);
 
-  static final Color sulu = const Color.fromRGBO(198, 237, 97, 1);
+  static const Color sulu = Color.fromRGBO(198, 237, 97, 1);
 }
